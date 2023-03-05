@@ -1,7 +1,7 @@
 # TODO: Change the name of the org 
 org: mehdirabbai
-app: serverless-todo-app-5
-service: serverless-todo-app-5
+app: serverless-todo-app-9
+service: serverless-todo-app-9
 frameworkVersion: '3.23.0'
 
 plugins:
@@ -24,11 +24,11 @@ provider:
   # Use these variables in the functions and resouorces section below. For example, 
   # ${self:provider.environment.ATTACHMENT_S3_BUCKET}
   environment:
-    TODOS_TABLE: serverless-c5-todo-app-5-${self:provider.stage}
+    TODOS_TABLE: serverless-c5-todo-app-9-${self:provider.stage}
     TODOS_CREATED_AT_INDEX: CreatedAtIndex
-    ATTACHMENT_S3_BUCKET: serverless-c5-todo-app-5-images-${self:provider.stage}
+    ATTACHMENT_S3_BUCKET: serverless-c5-todo-app-9-images-${self:provider.stage}
     SIGNED_URL_EXPIRATION: 300
-    PROJECT_NAME: serverless-todo-app-5
+    PROJECT_NAME: serverless-todo-app-9
     INDEX_NAME: ${self:provider.environment.TODOS_CREATED_AT_INDEX}
   logs:
     # Enable API Gateway logs
